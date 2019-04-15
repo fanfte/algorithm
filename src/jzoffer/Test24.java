@@ -31,7 +31,7 @@ public class Test24 {
         while (rightIndex < end && sequence[rightIndex] > endNum) {
             rightIndex ++;
         }
-        if (rightIndex != end) {
+        if (rightIndex != end - 1) {
             return false;
         }
 

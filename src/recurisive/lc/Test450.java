@@ -22,8 +22,11 @@ public class Test450 {
             if (root.right == null) {
                 return root.left;
             }
+            // 查出右子树最小节点
             TreeNode minNode = findMin(root.right);
+            // 当前节点设为最小节点
             root.val = minNode.val;
+            // 当前节点的右子树中删除冗余的最小节点
             root.right = deleteNode(root.right, minNode.val);
             return root;
         }

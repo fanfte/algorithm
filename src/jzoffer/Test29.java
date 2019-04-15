@@ -15,7 +15,7 @@ public class Test29 {
 
         int left = 0;
         int right = nums.length - 1;
-        int middle = nums.length >> 2;
+        int middle = nums.length >> 1;
         int index = partition(nums, left, right);
         while (index != middle) {
             if (index > middle) {
