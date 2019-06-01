@@ -12,6 +12,7 @@ public class HeapSort {
         if (arr == null || arr.length == 0) {
             return;
         }
+        // (arr.length - 1) / 2 为最后一个非叶子节点的索引
         for (int i = (arr.length - 1) / 2; i >= 0; i --) {
             heapnify(arr, arr.length, i);
         }
