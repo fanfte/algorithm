@@ -57,6 +57,7 @@ public class Test015 {
                 } else if (nums[i] + nums[left] + nums[right] > 0) {
                     right --;
                 } else {
+                    // 同样的两个数不需要再次放入，由于之前Arrays.sort过，不需要别的操作了
                     while (left < right && nums[left] == nums[left + 1])  {
                         left++;
                     }

@@ -31,8 +31,8 @@ public class Test001 {
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[] {3, 3};
-        int[] ints = new Test001().twoSum(arr, 6);
+        int[] arr = new int[] {2, 7, 11, 15};
+        int[] ints = new Test001().twoSum(arr, 9);
         for (int anInt : ints) {
             System.out.print(anInt + " ");
         }

@@ -34,7 +34,7 @@ public class Test11 {
         if (exponent == 1) {
             return base;
         }
-        double result = getPowerWithExponent(base, exponent >> 2);
+        double result = getPowerWithExponent(base, exponent >> 1);
         result *= result;
         if (exponent % 2 != 0) {
             result *= base;
